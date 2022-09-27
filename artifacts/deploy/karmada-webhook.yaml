@@ -15,7 +15,7 @@ spec:
       labels:
         app: karmada-webhook
     spec:
-      automountServiceAccountToken: false
+      serviceAccountName: karmada-webhook
       tolerations:
         - key: node-role.kubernetes.io/master
           operator: Exists

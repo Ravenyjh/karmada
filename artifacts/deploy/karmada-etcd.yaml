@@ -18,7 +18,6 @@ spec:
       labels:
         app: etcd
     spec:
-      automountServiceAccountToken: false
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:

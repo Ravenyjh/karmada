@@ -15,7 +15,7 @@ spec:
       labels:
         app: karmada-scheduler
     spec:
-      automountServiceAccountToken: false
+      serviceAccountName: karmada-scheduler
       tolerations:
         - key: node-role.kubernetes.io/master
           operator: Exists

@@ -53,6 +53,7 @@ if [[ -n ${CHINA_MAINLAND:-} ]]; then
 fi
 
 "${SCRIPT_ROOT}"/hack/deploy-karmada.sh "${HOST_CLUSTER_KUBECONFIG}" "${HOST_CLUSTER_NAME}" "remote"
+kubectl config use-context karmada-apiserver --kubeconfig="${HOST_CLUSTER_KUBECONFIG}"
 
 function print_success() {
   echo -e "$KARMADA_GREETING"

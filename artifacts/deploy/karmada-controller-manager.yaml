@@ -15,7 +15,7 @@ spec:
       labels:
         app: karmada-controller-manager
     spec:
-      automountServiceAccountToken: false
+      serviceAccountName: karmada-controller-manager
       tolerations:
       - key: node-role.kubernetes.io/master
         operator: Exists
